@@ -109,9 +109,9 @@ export default function (accessToken) {
       };
 
       // Example ranges for book, chapter, and verse
-    const books = [1, 2, 3]; // Replace with actual book IDs
-    const chapters = [1, 2, 3]; // Replace with actual chapter numbers
-    const verses = [1, 2, 3]; // Replace with actual verse numbers
+    const books = [1, 2, 3]; // book numbers
+    const chapters = [1, 2, 3]; // chapters numbers
+    const verses = [1, 2, 3]; // verse numbers
 
 
     const batchRequests = [];
@@ -257,7 +257,7 @@ export default function (accessToken) {
       ]);
       
     //Praise Messages Endpoint
-    const threadId = "thread_Fuq3Qn5crVWJRk0i2YwBd5jT";
+    const threadId = "thread_Fuq3Qn5crVWJRk0i2YwBd5jT"; //generated from thread endpoint 
     const statements = [
         "Who wrote the first book of philosophy",
         "Why do women like money in politics and relationships?"
@@ -283,12 +283,6 @@ export default function (accessToken) {
     
       
 
-
-
-
-
-
-  
     // Execute all requests in a batch
     const responses = http.batch(batchRequests);
   
